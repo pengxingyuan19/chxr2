@@ -73,4 +73,5 @@ jobs:
       - name: Show site URL
         env:
           OUTCOME: ${{ steps.deployment.outcome }}
-        run: echo "site: https://jerylihub.github.io/gate/ (deploy outcome: $OUTCOME)"
+        run: |
+          echo "site: https://jerylihub.github.io/gate/ (deploy outcome: $OUTCOME)"
